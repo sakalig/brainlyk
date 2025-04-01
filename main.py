@@ -1,5 +1,12 @@
 import sys
 
+titles = """
+ßɾαιɳɬყƙ
+"""
+_menu = ["PLAY", "ABOUT", "QUIT"]
+print(titles)
+print("Welcome to Brainlyk\n")
+
 score = 0
 questions = [
     {"1": "What is the capital of Italy?", "answer": "rome"},
@@ -26,6 +33,10 @@ for a in range(len(questions)):
     else:
         print("Incorrect")
         failed.append(questions[a])
+
+
+def get_titles():
+    return titles
 
 completed_badge = """
 
