@@ -1,3 +1,5 @@
+import sys
+
 score = 0
 questions = [
     {"1": "What is the capital of Italy?", "answer": "rome"},
@@ -11,3 +13,16 @@ questions = [
     {"9": "How many countries does the Rhine flow through? (one word, no digits)", "answer": "six"},
     {"10": "Which year did the Berlin wall get demolished? (digits only)", "answer": "1989"},
 ]
+
+for a in range(len(questions)):
+    print(questions[a][str(a+1)])
+    _input = str(sys.stdin.readline().lower()).strip()
+
+    # print("You answered: " + _input)
+    # print("Correct answer: " + questions[a]["answer"])
+
+    if _input == questions[a]["answer"]:
+        print("Correct")
+    else:
+        print("Try again")
+    
