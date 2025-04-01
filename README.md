@@ -9,3 +9,4 @@ This is a simple edutainment game with a question-answer format.
 - [ ] Dynamic question sourcing (LLM wrapping?)
 
 ## More about ßɾαιɳɬყƙ
+Version : v1
